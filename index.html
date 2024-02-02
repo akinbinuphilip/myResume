@@ -1,129 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asset/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Design</title>
+
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/remixicon/remixicon.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="asset/style.css">
-  <link rel="stylesheet" href="asset/img/style.css">
-    <link rel="stylesheet" href="asset/main.css">
-    <title>My Design Wesite</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <style>
+        #contact a {
+            color: #444;
+        }
+    </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="asset/img/city.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contact</a>
-                </li>
-        </div>
-    </div>
-</nav> 
-    <!-- ======= Hero Section =======
-    <section id="hero" class="hero d-flex align-items-center">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-7 col-sm-7 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with
-                        Bootstrap
-                    </h2>
-                    <div data-aos="fade-up" data-aos-delay="600">
-                        <div class="text-center text-lg-start">
-                            <a href="#about"
-                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>Get Started</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <!--An image logo -->
+            <a href="index.html" class="logo me-auto me-lg-0"><img src="asset/img/city.png" alt="logo"
+                    class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="#about" class="get-started-btn scrollto">Hire Me</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-xl-6 col-lg-8">
+                    <h1>Akinbinu Philip </h1>
+                    <h2></h2>
+                </div>
+            </div>
+
+            <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-store-line"></i>
+                        <h3><a href="#">Website</a></h3>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5 col-sm-5 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="asset/img/main.jpg" class="img-fluid" alt="">
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-bar-chart-box-line"></i>
+                        <h3><a href="#">Freelancer</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-calendar-todo-line"></i>
+                        <h3><a href="#">Maintenance</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-database-2-line"></i>
+
+                        <h3><a href="#">Content Creator</a></h3>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-md-4">
+                    <div class="icon-box">
+                        <i class="ri-paint-brush-line"></i>
+
+                        <h3><a href="#">Web design</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section><!-- End Hero -->
+    <!-- <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+    </defs>
+    <g class="wave1">
+        <use xlink:href="#wave-path" x="100" y="3" fill="cadetblue">
+    </g>
+    <g class="wave2">
+        <use xlink:href="#wave-path" x="100" y="0" fill="#023b6d">
+    </g>
+    <g class="wave2">
+        <use xlink:href="#wave-path" x="100" y="0" fill="#023b6d">
+    </g>
+    <g class="wave3">
+        <use xlink:href="#wave-path" x="100" y="9" fill="#ffc451">
+    </g>
+    <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+    </g>
+</svg>  -->
 
-    <h1 class="title text-center">Philip Coding Potfolio</h1>
 
 
-    <div class="container template">
-        <div class="template-card d-xl-flex">
-            <div>
-                <img src="asset/img/philip.webp" class="img-fluid h-100" width="670" alt="">
-            </div>
-            <div class="details">
-                <h2><a rel="bookmark">Oatslead-Innovation</a></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil perferendis explicabo, accusamus
-                    minima
-                    quas vel, et necessitatibus dolorem aspernatur magni cupiditate voluptatem cum harum quo doloribus
-                    quam
-                    voluptas mollitia?</p>
-                <div class="buttons">
-                    <a href="oatslead-innovation/index.html" rel="nofollow" class="demo" target="_blank"><span
-                            title="Live Demo">Live Demo</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
+
+    <!--HERO SECTION END -->
+
 
     <!-- ======= Values Section ======= -->
     <section id="values" class="values">
 
-        <div class="container" data-aos="fade-up">
+        <div class="container " data-aos="fade-up">
 
-            <header class="section-header">
-                <h2>Our Values</h2>
-                <p>Odit est perspiciatis laborum et dicta</p>
-            </header>
+            <div class="section-title">
+                <h2>My Goals</h2>
+                <p>I am aspiring to Become a Future Leader </p>
+            </div>
 
             <div class="row">
 
-                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="box">
-                        <img src="assets/img/values-1.png" class="img-fluid" alt="">
-                        <h3>Ad cupiditate sed est odio</h3>
-                        <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+                <div class="col-lg-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="box w-100">
+                        <img src="asset/img/values-1.png" class="img-fluid" alt="">
+                        <h3>Full Stack Developer</h3>
+                        <p>One of my vision has a Teenager is to understand the basic
+                            of computer language </p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-                    <div class="box">
-                        <img src="assets/img/values-2.png" class="img-fluid" alt="">
-                        <h3>Voluptatem voluptatum alias</h3>
-                        <p>Repudiandae amet nihil natus in distinctio suscipit id. Doloremque ducimus ea sit non.</p>
+                <div class="col-lg-4 mt-4 mb-3 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                    <div class="box w-100">
+                        <img src="asset/img/values-2.png" class="img-fluid" alt="">
+                        <h3>Doctorate Degree</h3>
+                        <p>One of my vision has a Teenager is to become a Doctor of Philosophy certificate holder</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
-                    <div class="box">
-                        <img src="assets/img/values-3.png" class="img-fluid" alt="">
-                        <h3>Fugit cupiditate alias nobis.</h3>
-                        <p>Quam rem vitae est autem molestias explicabo debitis sint. Vero aliquid quidem commodi.</p>
+                <div class="col-lg-4 mt-4 mb-3 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                    <div class="box w-100">
+                        <img src="asset/img/values-3.png" class="img-fluid" alt="">
+                        <h3>Creative</h3>
+                        <p>One of my vision has a Teenager is to be more innovative, artistic and resoucesful</p>
                     </div>
                 </div>
 
@@ -139,49 +179,50 @@
 
             <div class="section-title">
                 <h2>About</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat
-                    sit in iste officiis commodi quidem hic quas.</p>
+                <p>My name is Akinbinu philip
+                <p>
             </div>
 
             <div class="row">
                 <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+                    <img src="asset/img/features-4.png" style="height: 300px;" class="img-fluid w-100" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>Web Developer</h3>
-                    <!-- <h3>UI/UX Designer &amp; Web Developer.</h3> -->
+                    <!-- <h3>UI/UX DesignerI am a versatile web designer with to his extensive history in graphic and web design. &amp; Web Developer.</h3> -->
                     <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore
-                        magna aliqua.
+                        I am a Front End Developer, I design interactive
+                        website and webpages for
+                        my client. My dedication to
+                        continuously learning about new web design trends and concepts has made me a valuable member of
+                        the society. With five
+                        years of experience my expertise can help client modernize with websites and appeal to
+                        expanding customer populations.
                     </p>
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May
-                                        1995</span>
+                                        2005</span>
                                 </li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                                    <span>www.example.com</span>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Hobby:</strong>
+                                    <span>Reading</span>
                                 </li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456
-                                        7890</span>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 813
+                                        7968284</span>
                                 </li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York,
-                                        USA</span>
+                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Akure,
+                                        Nigeria</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
                                 </li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong>
-                                    <span>email@example.com</span>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                    <span>akinbinup842@gmail.com</span>
                                 </li>
                                 <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
                                     <span>Available</span>
@@ -190,11 +231,9 @@
                         </div>
                     </div>
                     <p>
-                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci
-                        omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                        Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-                        neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni
-                        laudantium dolores.
+                        I am able to work independently in busy environments and also within a team setting. I
+                        am outgoing and tactful,
+                        and able to listen effectively when solving problems.
                     </p>
                 </div>
             </div>
@@ -202,256 +241,639 @@
         </div>
     </section><!-- End About Section -->
 
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+            <div class="clients-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="asset/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="asset/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
 
+        </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Stats Counter Section ======= -->
+    <section id="stats-counter" class="stats-counter">
         <div class="container" data-aos="fade-up">
 
-            <header class="section-header">
-                <h2>Features</h2>
-                <p>Laboriosam et omnis fuga quis dolor direda fara</p>
-            </header>
+            <div class="row gy-4 align-items-center">
 
+                <div class="col-lg-6">
+                    <img src="asset/img/stats-img.svg" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="stats-item d-flex align-items-center">
+                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1.5"
+                            class="purecounter"></span>
+                        <p><strong>Happy Clients</strong> always efficient</p>
+                    </div><!-- End Stats Item -->
+
+                    <div class="stats-item d-flex align-items-center">
+                        <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1.5"
+                            class="purecounter"></span>
+                        <p><strong>Projects</strong> always accurate</p>
+                    </div><!-- End Stats Item -->
+
+                    <div class="stats-item d-flex align-items-center">
+                        <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1.5"
+                            class="purecounter"></span>
+                        <p><strong>Hours Of Support</strong> always available</p>
+                    </div><!-- End Stats Item -->
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Stats Counter Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features mx-4">
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Value</h2>
+                <p>My Core Values </p>
+            </div>
             <div class="row">
 
-                <div class="col-lg-6">
-                    <img src="assets/img/features.png" class="img-fluid" alt="">
+                <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+                    <img src="asset/img/features-2.png" class="img-fluid p-4" alt="">
                 </div>
 
-                <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                <div class="col-xl-8 d-flex content">
                     <div class="row align-self-center gy-4">
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Eos aspernatur rem</h3>
+                        <div class="col-md-6 icon-box" data-aos="fade-up">
+                            <i class="ri-line-chart-line"></i>
+                            <div>
+                                <h4>Innovation</h4>
+                                <p>I built in my self a young and steady mind with the intention to change my
+                                    environment to my
+                                    ideas and thought.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Facilis neque ipsa</h3>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                            <i class="ri-stack-line"></i>
+                            <div>
+                                <h4>Excellence</h4>
+                                <p>I build myself daily and grow my mind and intellect so has to keep up with the
+                                    advancing technologies.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Volup amet voluptas</h3>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <i class="ri-brush-4-line"></i>
+                            <div>
+                                <h4>Empowerment</h4>
+                                <p>I built myself emotionally and realised a sense of purpose in my life by setting
+                                    goals and taking actionable steps to achieve them.</p>
                             </div>
                         </div>
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Rerum omnis sint</h3>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <i class="ri-magic-line"></i>
+                            <div>
+                                <h4>Collabration</h4>
+                                <p> I built myself to be more efficient by listening and leaning from those ahead of me.
+                                </p>
                             </div>
                         </div>
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Alias possimus</h3>
+                        <!-- <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                            <i class="ri-command-line"></i>
+                            <div>
+                                <h4>Molestiae dolor</h4>
+                                <p> </p>
                             </div>
                         </div>
 
-                        <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
-                            <div class="feature-box d-flex align-items-center">
-                                <i class="bi bi-check"></i>
-                                <h3>Repellendus mollitia</h3>
+                        <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                            <i class="ri-radar-line"></i>
+                            <div>
+                                <h4>Explicabo consectetur</h4>
+                                <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
 
-            </div> <!-- / row -->
+            </div>
 
-            <!-- Feature Tabs -->
-            <div class="row feture-tabs" data-aos="fade-up">
-                <div class="col-lg-6">
-                    <h3>Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
-
-                    <!-- Tabs -->
-                    <ul class="nav nav-pills mb-3">
-                        <li>
-                            <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Saepe fuga</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" data-bs-toggle="pill" href="#tab2">Voluptates</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" data-bs-toggle="pill" href="#tab3">Corrupti</a>
-                        </li>
-                    </ul><!-- End Tabs -->
-
-                    <!-- Tab Content -->
-                    <div class="tab-content">
-
-                        <div class="tab-pane fade show active" id="tab1">
-                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                Sapiente
-                                atque
-                                consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                            </div>
-                            <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                dolorum
-                                non
-                                eveniet magni quaerat nemo et.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                            </div>
-                            <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur.
-                                Iure
-                                molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora.
-                                Quia et
-                                perferendis.</p>
-                        </div><!-- End Tab 1 Content -->
-
-                        <div class="tab-pane fade show" id="tab2">
-                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                Sapiente
-                                atque
-                                consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                            </div>
-                            <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                dolorum
-                                non
-                                eveniet magni quaerat nemo et.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                            </div>
-                            <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur.
-                                Iure
-                                molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora.
-                                Quia et
-                                perferendis.</p>
-                        </div><!-- End Tab 2 Content -->
-
-                        <div class="tab-pane fade show" id="tab3">
-                            <p>Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita.
-                                Sapiente
-                                atque
-                                consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
-                            </div>
-                            <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi
-                                dolorum
-                                non
-                                eveniet magni quaerat nemo et.</p>
-                            <div class="d-flex align-items-center mb-2">
-                                <i class="bi bi-check2"></i>
-                                <h4>Incidunt non veritatis illum ea ut nisi</h4>
-                            </div>
-                            <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur.
-                                Iure
-                                molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora.
-                                Quia et
-                                perferendis.</p>
-                        </div><!-- End Tab 3 Content -->
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6">
-                    <img src="assets/img/features-2.png" class="img-fluid" alt="">
-                </div>
-
-            </div><!-- End Feature Tabs -->
-
-            <!-- Feature Icons -->
-            <div class="row feature-icons" data-aos="fade-up">
-                <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
-
-                <div class="row">
-
-                    <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
-                        <img src="assets/img/features-3.png" class="img-fluid p-4" alt="">
-                    </div>
-
-                    <div class="col-xl-8 d-flex content">
-                        <div class="row align-self-center gy-4">
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up">
-                                <i class="ri-line-chart-line"></i>
-                                <div>
-                                    <h4>Corporis voluptates sit</h4>
-                                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut
-                                        aliquip
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                                <i class="ri-stack-line"></i>
-                                <div>
-                                    <h4>Ullamco laboris nisi</h4>
-                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                        deserunt
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                                <i class="ri-brush-4-line"></i>
-                                <div>
-                                    <h4>Labore consequatur</h4>
-                                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                                <i class="ri-magic-line"></i>
-                                <div>
-                                    <h4>Beatae veritatis</h4>
-                                    <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                                <i class="ri-command-line"></i>
-                                <div>
-                                    <h4>Molestiae dolor</h4>
-                                    <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                                <i class="ri-radar-line"></i>
-                                <div>
-                                    <h4>Explicabo consectetur</h4>
-                                    <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div><!-- End Feature Icons -->
+        </div><!-- End Feature Icons -->
 
         </div>
 
     </section><!-- End Features Section -->
 
+    <!-- ======= Our Services Section ======= -->
+    <section id="services" class="services sections-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Check my Services</p>
+            </div>
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item  position-relative">
+                        <div class="icon">
+                            <i class="bi bi-activity"></i>
+                        </div>
+                        <h3>Reponsive design</h3>
+                        <p>I ensure that the page will look good on any device and will fit the proper dimension, making
+                            sure the website's layout changes depending on the device.</p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <h3>Web app development</h3>
+                        <p>A web app is built so that the user interface provides data back to the development team that
+                            designed it.</p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-easel"></i>
+                        </div>
+                        <h3>UX optimization</h3>
+                        <p>User experience optimization is about understanding how users interact with your app and
+                            identifying opportunities to be
+                            improved.</p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-bounding-box-circles"></i>
+                        </div>
+                        <h3>Css3 Development</h3>
+                        <p>CSS3 features such as Generated Content and Counters allow developers to embed content into
+                            web pages without using HTML</p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <h3>Additional Front End Development</h3>
+                        <p>Example Project that requires framework/librabies: <br> To-Do List App: Build a task manager
+                            with add/edit/delete functions. </p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Weather App: Display weather data based on user
+                        input using an API. Recipe Finder: Create a recipe search app using a recipe API. Calculator: Build a web-based
+                        calculator for basic math operations. Item -->
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-chat-square-text"></i>
+                        </div>
+                        <h3>Single Page App Development</h3>
+                        <p>A single page application is a website or web application that dynamically rewrites a current
+                            web page with new data
+                            from the web server.</p>
+                        <!-- <a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+    </section><!-- End Our Services Section -->
+
+    <section id="portfolio" class="p-3">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p> My Previous Works</p>
+            </div>
+            <div class="row d-flex flex-column justify-content-center g-5">
+                <div class="col">
+                    <div class="row template border ">
+                        <div class="col-md-5 px-0">
+                            <img src="asset/img/site-1.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-md-7 px-5 p-5">
+                            <h2><a>Oatslead-Innovation</a></h2>
+                            <p style="padding: 20px 0;">A webpages that basically tells you more about
+                                Oatslead-Innovation</p>
+                            <div class="buttons">
+                                <a class="btn btn-outline-cadet" href="./oatslead-innovation/index.html"><span>Live
+                                        Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row template border ">
+                        <div class="col-md-5 px-0">
+                            <img src="asset/img/shopping.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-md-7 px-5 p-5">
+                            <h2><a>Shopping-Cart</a></h2>
+                            <p>A webpage that host item for sale, once the "add to cart" button is clicked, item is
+                                automatically added to cart and all other calculation are automatically done</p>
+                            <div class="buttons">
+                                <a class="btn btn-outline-cadet" href="shoppinCart/index.html"><span>Live
+                                        Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row template border ">
+                        <div class="col-md-5 px-0">
+                            <img src="asset/img/site-2.jpg" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="col-md-7 px-5 p-5">
+                            <h2><a>A todo app</a></h2>
+                            <p style="padding: 20px 0;">Add your To do list ,edit ,and complete them</p>
+                            <div class="buttons">
+                                <a class="btn btn-outline-cadet" href="to list APP/index.html"><span>Live
+                                        Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>What they say about me</p>
+            </div>
+
+            <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="asset/img/download.jpeg" class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Saul Goodman</h3>
+                                        <h4>Ceo &amp; Founder</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    I worked with philip many times from work-related to personal and i can say without
+                                    doubth he is a upright, honest and modest man.
+
+
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="asset/img/google.jpeg" class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Sara Wilsson</h3>
+                                        <h4>Designer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    Very professional service, you can feel the passion philip has for helping me grow
+                                    my business. Highly recommend this
+                                    him. Thank you for great job.
+                                    .
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="asset/img/ceo.webp" class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Jena Karlis</h3>
+                                        <h4>Store Owner</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    I just wanted to take a minute to say thanks for your help on getting the content of
+                                    my website together. It has come up
+                                    really well and the feedback that I'm getting from everyone is that they are super
+                                    impressed with the content and web
+                                    design. The common word used is 'very professional'. <i
+                                        class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="asset/img/ceo-vs-cfo.webp" class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>Matt Brandon</h3>
+                                        <h4>Freelancer</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    I would recommend philip to other small businesses looking to have a website that
+                                    not only looks good, it actually works
+                                    in terms of converting sales.
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="asset/img/ceo-2.jpeg" class="testimonial-img flex-shrink-0" alt="">
+                                    <div>
+                                        <h3>John Larson</h3>
+                                        <h4>Entrepreneur</h4>
+                                        <div class="stars">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <i class="bi bi-quote quote-icon-left"></i>
+                                    What I found was that philip was brilliant. He was not only reasonably priced, but
+                                    he also met every deadline, and my
+                                    site is fast to load and looks great on all devices.“
+                                    <i class="bi bi-quote quote-icon-right"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+
+            <div class="section-title" data-aos="zoom-out">
+                <h2>Contact</h2>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="row mt-5">
+
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Ugele Estate,
+                                Opposite Benin Garage, <br>
+                                Akure, Ondo State</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p><a href="mailto:akinbinu842@gmail.com">akinbinu842@gmail.com</a></p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p><a href="tel:+23408137968284">08137968284</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <a href="index.html"><img src="asset/img/city.png" alt="logo" class="img-fluid"></a>
+                            <p>
+                                Codename provides website design and copywriting your website words for small
+                                businesses,
+                                specialising in trades, services & allied health businesses.
+                                <br><br>
+                                <strong>Phone:</strong> &nbsp; <a href="tel:+23408137968284">08137968284</a><br>
+                                <strong>Email:</strong> &nbsp; <a
+                                    href="mailto:akinbinu842@gmail.com">akinbinu842@gmail.com</a><br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <!-- Section: Links  -->
+                                <section>
+                                    <!--?             ******************        SOCIAL   SECTION  START           *****************         ----->
+                                    <div class="container pb-0">
+                                        <!-- Section: Social media -->
+                                        <section class="mb-4">
+                                            <!-- Facebook -->
+                                            <a class="btn text-white btn-floating m-1" href="#!" role="button"><i
+                                                    class="bi bi-facebook"></i></a>
+
+                                            <!-- Twitter -->
+                                            <a class="btn text-white btn-floating m-1" href="#!" role="button"><i
+                                                    class="bi bi-twitter"></i></a>
+
+                                            <!-- Google
+                                            <a class="btn text-white btn-floating m-1"
+                                                 href="#!" role="button"><i
+                                                    class="bi bi-google"></i></a>
+ -->
+                                            <!-- Instagram 
+                                            <a class="btn text-white btn-floating m-1"
+                                                 href="#!" role="button"><i
+                                                    class="bi bi-instagram"></i></a>
+-->
+                                            <!-- Linkedin -->
+                                            <a class="btn text-white btn-floating m-1" href="#!" role="button"><i
+                                                    class="bi bi-linkedin"></i></a>
+                                            <!-- Github -->
+                                            <a class="btn text-white btn-floating m-1" href="#!" role="button"><i
+                                                    class="bi bi-github"></i></a>
+                                        </section>
+                                        <!-- Section: Social media -->
+                                    </div>
+                                    <!--?             ******************       SOCIAL   SECTION END           *****************         ----->
+
+                                </section>
+                                <!-- Section: Links  -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#About">About me</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Reponsive design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Web app Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">UX Optimization</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">CSS3 Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#services">Web Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Get regular practical tips & inspiration for your small business marketing & receive a free
+                            ebook as our thanks.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>codename</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="#contact">Philip</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
 
 
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="asset/js/smooth-scroll.js"></script>
+    <script src="asset/js/main.js"></script>
+
 </body>
 
 </html>
