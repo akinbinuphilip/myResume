@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 :root {
-  --container-height: 550px;
+  --container-height: 600px;
   --contaier-width: 400px;
   --header-height: 150px;
 }
@@ -17,35 +17,25 @@ html {
   font-size: 20px;
 }
 
-.continer {
-  background-color: whitesmoke;
-  padding: 50px;
-}
-
-h3 {
-  font-size: 20px;
-  color: gray;
-}
-
-.topic {
-  width: 90vw;
-  height: 90vh;
+/* 
+body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
+} */
 
 .container {
-  margin-top: 50px;
   background-color: antiquewhite;
   width: var(--contaier-width);
   height: var(--container-height);
-
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
 
-#header {
+.wrapper {
   width: 100%;
   height: var(--header-height);
   background-image: url('./img/bg.jpg');
@@ -100,7 +90,7 @@ h3 {
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
 }
 
-#todos_list {
+#todos-list {
   height: calc(var(--container-height) - var(--header-height));
   background-color: #fff;
   padding: 0.5rem;
@@ -109,27 +99,27 @@ h3 {
   border-radius: 0 0 5px 5px;
 }
 
-#todos_list .todo {
+#todos-list .todo {
   display: flex;
   align-items: center;
   padding: 0.75rem 0.5rem;
   border-radius: 5px;
 }
 
-#todos_list .todo:hover {
+#todos-list .todo:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#todos_list .todo * {
+#todos-list .todo * {
   cursor: pointer;
   margin-right: 0.5rem;
 }
 
-#todos_list .todo i {
+#todos-list .todo i {
   font-size: 0.9rem;
 }
 
-#todos_list .todo p {
+#todos-list .todo p {
   flex: 1;
   word-break: break-all;
 }
@@ -139,11 +129,11 @@ h3 {
   color: grey;
 }
 
-#todos_list .todo .bi-pencil-square {
+#todos-list .todo .bi-pencil-square {
   color: rgb(31, 177, 48);
 }
 
-#todos_list .todo .bi-trash {
+#todos-list .todo .bi-trash {
   color: rgb(236, 82, 82);
   margin: 0;
 }

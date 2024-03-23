@@ -1,104 +1,170 @@
-body{
-    box-sizing: border-box;
+* {
     margin: 0;
-    padding: 0;     
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-  font-family: 'Montserrat Alternates', sans-serif;
+body {
+    font-family: sans-serif;
 }
 
-#category{
-  padding: 5% 6%;
-}
-#product-cards{
-  padding: 5% 10%;
-}
-
-#footer{
- margin-bottom: 2%;
- margin-top: 2%;
-  
-}
-.filter-btns{
-  text-align: center;
-}
-.filter-btn{
-  background: none;
-  cursor: pointer;
-  border: none;
-  font-family: inherit;
-  text-transform: uppercase;
-  display: inline-block;
-  margin: 10px 30px;
-  font-size: 16px;
-  color: #d3d3d3;
-  font-weight: 600;
-  letter-spacing: 2px;
-  position: relative;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.filter-btn::after{
-  content: "";
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 2px;
-  width: 0;
-  background-color: #555;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out
-}
-.filter-btn:hover{
-  color: #555;
-}
-.filter-btn:hover::after{
-  width: 100%;
-}
-/* active button */
-.active-btn{
-  color: #555;
-}
-.active-btn::after{
-  width: 100%;
-}
-
-.canvas-title{
-  text-align: center;
+/**
+*!   NAVBAR stytles are fopund here.
+**/
+.navbar {
+    color: white;
+    align-items: center;
+    background-color: #212529;
+    padding: 25px 60px !important;
 }
 
 
+.cart {
+    background-color: #fff;
+    color: #212529;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
 
-/*     Shopping Cart     */
+.cartAmount {
+    position: absolute;
+    top: 5px;
+    right: 52px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
 
- .btn-purchase{
-   text-align: center;
-   margin: auto;
-   padding: 2%;
-   width: 50%;
- }
+/**
+*!  SHOP styles are found here.
+**/
 
- #shopping-cart{
-   padding: 5% 5%;
- }
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px !important;
+    justify-content: center !important;
+}
 
- .cart-total{
-   text-align: right;
-   font-size: 1.3rem;
- }
+@media(max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
 
-.up-icon{
-   color: black;
-   position: fixed;
-   float: right;
-   z-index: 1;
-   left: 95%;
-   top: 85%;
-   font-size: 2rem;
- }
+
+@media(max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+
+.details {
+    padding: 13px;
+    min-width: 200px;
+    gap: 10px;
+}
+
+.buttons {
+    gap: 8px;
+    font-size: 26px;
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+}
+
+i {
+    cursor: pointer;
+}
+
+/**
+*! Styles for label and 
+**/
+
+.HomeBtn,
+.checkout,
+.removeAll {
+    background-color: #212121;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.HomeBtn:hover {
+    transform: scale(.9);
+}
+
+.bi-x-lg {
+    font-size: 16px;
+    color: red;
+    font-weight: bolder;
+}
+
+/**
+*! Styles for Shopping cart
+**/
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#label {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/**
+*! Styles for cart-item
+**/
+
+.title-price-x {
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart-item {
+    border: 2px solid #212121;
+    border-radius: 6px;
+    display: flex;
+}
+
+.title-price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart-item-price {
+    background-color: #212121;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 6px;
+}

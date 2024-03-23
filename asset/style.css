@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Rubik+Mono+One&display=swap');
 
 /*--------------------------------------------------------------
 # General
@@ -125,9 +126,24 @@ h6 {
 }
 
 #header .logo {
-  filter: invert(1);
+  /* filter: invert(1); */
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding: 0;
+}
+
+@media(min-width:600px) {
+  #header .logo {
+    font-size: 30px;
+  }
+}
+
+@media(max-width:600px) {
+  #header .logo {
+    font-size: 20px;
+  }
 }
 
 #header .logo a {
@@ -140,7 +156,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -428,6 +444,12 @@ h6 {
   text-align: center;
 }
 
+@media(max-width: 768px) {
+  #hero .container {
+    padding-top: 33px;
+  }
+}
+
 #hero h1 {
   margin: 0;
   font-size: 56px;
@@ -491,7 +513,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero .container {
-    margin: 54px 0 40px 0;
+    margin: 0px 0 40px 0;
   }
 
   #hero h1 {
@@ -515,10 +537,11 @@ section {
 }
 
 
-svg{
+svg {
   margin-top: -30px;
   margin-bottom: 30px;
 }
+
 .section-title {
   padding-bottom: 40px;
 }
@@ -558,6 +581,10 @@ svg{
   .section-title p {
     font-size: 28px;
   }
+/*!-----------------   hide the display -------------------------*/
+    .hide {
+      display: none;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -659,7 +686,8 @@ svg{
 
 .stats-counter .stats-item p {
   margin: 0;
-  font-family: "Montserrat", sans-serif;  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 /*--------------------------------------------------------------
@@ -776,16 +804,16 @@ svg{
 /*--------------------------------------------------------------
 # Template
 --------------------------------------------------------------*/
-.template{
+.template {
   border-radius: 20px;
 }
 
-.template .img-fluid{
+.template .img-fluid {
   height: 300px;
-  border-radius: 20px 0  0 20px;
+  border-radius: 20px 0 0 20px;
 }
 
-.template .btn-outline-cadet{
+.template .btn-outline-cadet {
   border: 1px solid cadetblue;
   padding: 10px 30px;
   color: cadetblue;
@@ -793,20 +821,18 @@ svg{
   margin-top: 40px;
 }
 
-.template .btn-outline-cadet:hover{
+.template .btn-outline-cadet:hover {
   border: none;
   color: white;
   background-color: cadetblue;
 }
 
-.template:hover{
-border: none;
+.template:hover {
+  border: none;
   box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
 }
 
-@media(max-width: 800px){
-
-}
+@media(max-width: 800px) {}
 
 /*--------------------------------------------------------------
 # Counts
@@ -889,6 +915,7 @@ border: none;
     max-width: 100%;
   }
 }
+
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
@@ -990,7 +1017,9 @@ border: none;
     position: static;
     left: auto;
   }
-}/*--------------------------------------------------------------
+}
+
+/*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team {
@@ -1274,9 +1303,9 @@ border: none;
   font-size: 14px;
 }
 
-#footer img{
+#footer img {
   filter: invert(1);
-  height: 60px!important;
+  height: 60px !important;
 }
 
 #footer .footer-top {
@@ -1500,7 +1529,7 @@ border: none;
   border: 1px solid #cfd4e4;
 }
 
-a {
+.buttons a {
   transition: .1s;
   text-decoration: none;
 }
@@ -1955,9 +1984,9 @@ a {
   color: cadetblue;
 }
 
- .btn-floating{
-  background-color: #ffc451!important;
-  color: whitesmoke!important;
+.btn-floating {
+  background-color: #ffc451 !important;
+  color: whitesmoke !important;
 }
 
 

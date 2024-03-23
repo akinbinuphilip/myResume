@@ -1,10 +1,4 @@
-/**
-* Template Name: Gp
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   ("use strict");
 
@@ -298,7 +292,89 @@
   // });
 
   /**
+   * 
+   * 
+   * (function () {
+    "use strict";
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+            "submit",
+            function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                form.classList.add("was-validated");
+            },
+            false
+        );
+    });
+})();
+// Focus Icons
+const inputs = document.querySelectorAll("input");
+
+console.log(typeof inputs);
+
+Object.keys(inputs).map((key, input) => onBlurOnFocus(inputs[key]));
+
+function onBlurOnFocus(input) {
+    input.onfocus = (e) => {
+        e.target.previousElementSibling.classList.toggle("text-primary");
+    };
+    input.onblur = (e) => {
+        e.target.previousElementSibling.classList.toggle("text-primary");
+    };
+}
+   */
+  /** Array.prototype.splice.call(Forms).forEach(function (form) {
+      form.addEventListener("submit", function (event) {
+        if (!form.checkvalidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          console.log("");
+        }
+      });
+    });
    * Initiate Pure Counter
    */
   new PureCounter();
+
 })()
+
+ function myfunction() {
+   console.log("hello");
+ }
+//  const submitButton = document.getElementById("submit_button");
+//  const Form_holder = document.getElementById("form");
+//  const Forms = document.querySelectorAll("needs-validation");
+//  submitButton.addEventListener("click", myfunction());
+
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
+ 
