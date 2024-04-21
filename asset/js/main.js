@@ -1,5 +1,4 @@
-
-(function() {
+(function () {
   ("use strict");
 
   /**
@@ -202,8 +201,8 @@
         spaceBetween: 80,
       },
       992: {
-        slidesPerView: 6,
-        spaceBetween: 120,
+        slidesPerView: 5,
+        spaceBetween: 100,
       },
     },
   });
@@ -344,12 +343,11 @@ function onBlurOnFocus(input) {
    * Initiate Pure Counter
    */
   new PureCounter();
+})();
 
-})()
-
- function myfunction() {
-   console.log("hello");
- }
+function myfunction() {
+  console.log("hello");
+}
 //  const submitButton = document.getElementById("submit_button");
 //  const Form_holder = document.getElementById("form");
 //  const Forms = document.querySelectorAll("needs-validation");
@@ -377,4 +375,3 @@ function onBlurOnFocus(input) {
     );
   });
 })();
- 
